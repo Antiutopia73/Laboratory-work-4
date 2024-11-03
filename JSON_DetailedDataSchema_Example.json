@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "Користувач": {
-      "type": "object",
+      "type": "object"
       "properties": {
         "геолокація": {
           "type": "string",
