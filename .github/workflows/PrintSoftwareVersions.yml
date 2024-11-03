@@ -12,10 +12,14 @@ jobs:
       - name: Print Node.js Version
         run: node --version
       - name: Print React.js Version
-        run: npx create-react-app --version 
+        run: npx create-react-app --version # React is typically managed by Node.js, so we check its version this way
 
   PrintDatabaseVersions:
     runs-on: ubuntu-latest
     steps:
+      - name: Install MongoDB
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mongodb
       - name: Print MongoDB Version
         run: mongod --version
