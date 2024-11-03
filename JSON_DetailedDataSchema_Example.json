@@ -15,18 +15,18 @@
       "required": ["геолокація"]
     },
     "Інформація_про_безпеку": {
-      "type": "object",
-      "properties": {
+      "type: "object",
+      "properties: 
         "індекс_безпеки": {
           "type": "integer",
           "description": "Показник безпеки в зазначеній геолокації",
           "maximum": 499
         }
-      },
+      }
       "required": ["індекс_безпеки"]
     },
-    "Якість_Повітря": {
-      "type": "object",
+    "Якість_Повітря: {
+      "type": "object"
       "properties": {
         "рівень_забруднення": {
           "type": "integer",
